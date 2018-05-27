@@ -34,5 +34,15 @@ export default {
   fetchSecureResource () {
     return $axios.get(`secure-resource/zzz`)
       .then(response => response.data)
+  },
+
+  playRadio () {
+    return $axios.get(`radio/play`)
+      .then(response => response.data)
+  },
+
+  stopRadio () {
+    return $axios.get(`radio/stop`)
+      .then(response => response.data)
   }
 }
